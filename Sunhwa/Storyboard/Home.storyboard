@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s8T-np-29A">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--전체-->
+        <scene sceneID="ZGh-lW-KLw">
+            <objects>
+                <viewController id="s8T-np-29A" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tAp-nZ-fUZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0bl-ml-hho">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <searchBar key="tableFooterView" contentMode="redraw" id="qLp-hd-MD0">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jlz-xR-FXC" firstAttribute="trailing" secondItem="0bl-ml-hho" secondAttribute="trailing" id="3vj-SB-Bsk"/>
+                            <constraint firstItem="0bl-ml-hho" firstAttribute="leading" secondItem="jlz-xR-FXC" secondAttribute="leading" id="SEn-Kd-4Bt"/>
+                            <constraint firstItem="0bl-ml-hho" firstAttribute="top" secondItem="jlz-xR-FXC" secondAttribute="top" id="XnO-Nc-8Qw"/>
+                            <constraint firstItem="jlz-xR-FXC" firstAttribute="bottom" secondItem="0bl-ml-hho" secondAttribute="bottom" id="ZBh-qw-Plx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jlz-xR-FXC"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="전체" id="vjY-ei-jWk"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FRD-Sm-jeI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="267" y="39"/>
+        </scene>
+    </scenes>
+</document>
