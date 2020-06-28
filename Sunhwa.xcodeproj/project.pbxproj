@@ -72,7 +72,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-<<<<<<< HEAD
 		00B23EE224A61F90000C6335 /* Word */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,7 +80,6 @@
 				00B23EE824A61FCF000C6335 /* WordTableViewCell.xib */,
 			);
 			path = Word;
-=======
 		7C7A2EE624A61A180020BDDB /* Consonant */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,7 +87,6 @@
 				7C7A2EE924A61A570020BDDB /* ConsonantCollectionViewCell.swift */,
 			);
 			path = Consonant;
->>>>>>> 70956ff33dd50aed1ad91aac057f25598de62dec
 			sourceTree = "<group>";
 		};
 		7CBB0F8624A60A44006CA992 = {
@@ -113,11 +110,8 @@
 		7CBB0F9124A60A44006CA992 /* Sunhwa */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				00B23EE224A61F90000C6335 /* Word */,
-=======
 				7C7A2EE624A61A180020BDDB /* Consonant */,
->>>>>>> 70956ff33dd50aed1ad91aac057f25598de62dec
 				7CBB0FB724A60A63006CA992 /* Extension */,
 				7CBB0FB824A60A76006CA992 /* Network */,
 				7CBB0FBA24A60AD3006CA992 /* Storyboard */,
@@ -278,12 +272,9 @@
 			files = (
 				7CBB0F9D24A60A44006CA992 /* Sunhwa.xcdatamodeld in Sources */,
 				7CBB0F9324A60A44006CA992 /* AppDelegate.swift in Sources */,
-<<<<<<< HEAD
 				00B23EE524A61FAF000C6335 /* WordViewController.swift in Sources */,
-=======
 				7C7A2EEA24A61A570020BDDB /* ConsonantCollectionViewCell.swift in Sources */,
 				7C7A2EE824A61A400020BDDB /* ConsonantViewController.swift in Sources */,
->>>>>>> 70956ff33dd50aed1ad91aac057f25598de62dec
 				7CBB0F9524A60A44006CA992 /* SceneDelegate.swift in Sources */,
 				00B23EE924A61FCF000C6335 /* WordTableViewCell.swift in Sources */,
 			);
