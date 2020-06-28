@@ -1,28 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sp0-YS-743">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sp0-YS-743">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--자음분류-->
         <scene sceneID="lyF-66-cHc">
             <objects>
-                <viewController id="sp0-YS-743" sceneMemberID="viewController">
+                <viewController id="sp0-YS-743" customClass="ConsonantViewController" customModule="Sunhwa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D7Z-SU-iQ3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MiO-r0-Tpb">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UaS-fA-jgf">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ConsonantCollectionViewCell" id="4mR-gT-E6N" customClass="ConsonantCollectionViewCell" customModule="Sunhwa" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gUt-4C-x3S">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83h-kE-gem">
+                                                    <rect key="frame" x="34.5" y="49" width="59.5" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="83h-kE-gem" firstAttribute="centerX" secondItem="gUt-4C-x3S" secondAttribute="centerX" id="0fB-gO-Oa6"/>
+                                                <constraint firstItem="83h-kE-gem" firstAttribute="centerY" secondItem="gUt-4C-x3S" secondAttribute="centerY" id="qpc-Pk-WT3"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="consonantLabel" destination="83h-kE-gem" id="1lO-6V-o3Z"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="sp0-YS-743" id="BMw-lV-pxu"/>
+                                    <outlet property="delegate" destination="sp0-YS-743" id="Crz-Z1-FRV"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zZA-kF-bMQ" firstAttribute="trailing" secondItem="MiO-r0-Tpb" secondAttribute="trailing" id="0ul-3o-syV"/>
+                            <constraint firstItem="MiO-r0-Tpb" firstAttribute="leading" secondItem="zZA-kF-bMQ" secondAttribute="leading" id="9rO-hy-C3F"/>
+                            <constraint firstItem="MiO-r0-Tpb" firstAttribute="top" secondItem="zZA-kF-bMQ" secondAttribute="top" id="TfK-fY-wHi"/>
+                            <constraint firstItem="zZA-kF-bMQ" firstAttribute="bottom" secondItem="MiO-r0-Tpb" secondAttribute="bottom" id="zHs-lX-OEW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="zZA-kF-bMQ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="자음분류" id="NRE-py-DCz"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="consonantCollectionView" destination="MiO-r0-Tpb" id="FvT-f4-sku"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wBr-Qx-iPv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="84" y="84"/>
+            <point key="canvasLocation" x="82.608695652173921" y="83.705357142857139"/>
         </scene>
     </scenes>
 </document>

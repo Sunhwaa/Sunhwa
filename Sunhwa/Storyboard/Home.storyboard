@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,7 +11,7 @@
         <!--전체-->
         <scene sceneID="ZGh-lW-KLw">
             <objects>
-                <viewController id="s8T-np-29A" sceneMemberID="viewController">
+                <viewController id="s8T-np-29A" customClass="WordViewController" customModule="Sunhwa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tAp-nZ-fUZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -18,11 +19,49 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0bl-ml-hho">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <searchBar key="tableFooterView" contentMode="redraw" id="qLp-hd-MD0">
+                                <searchBar key="tableHeaderView" contentMode="redraw" placeholder="검색" id="qLp-hd-MD0">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="barTintColor" name="208230255"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </searchBar>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="111" id="PcE-e0-gC3">
+                                        <rect key="frame" x="0.0" y="72" width="414" height="111"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PcE-e0-gC3" id="xJ5-lV-zdr">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="111"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="야끼만두" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLG-5f-nZ0">
+                                                    <rect key="frame" x="77.5" y="43.5" width="69.5" height="24"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                    <color key="textColor" name="155"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="군만두" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1J-Ts-FQe">
+                                                    <rect key="frame" x="267" y="43.5" width="52" height="24"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                    <color key="textColor" name="74"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowImg" translatesAutoresizingMaskIntoConstraints="NO" id="aWF-eU-bZ3">
+                                                    <rect key="frame" x="197" y="41.5" width="20" height="28"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="C1J-Ts-FQe" secondAttribute="trailing" constant="15" id="A06-ga-VjJ"/>
+                                                <constraint firstItem="QLG-5f-nZ0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xJ5-lV-zdr" secondAttribute="leading" constant="15" id="HVV-qz-uJ6"/>
+                                                <constraint firstItem="aWF-eU-bZ3" firstAttribute="centerY" secondItem="C1J-Ts-FQe" secondAttribute="centerY" id="TwM-Ob-I3X"/>
+                                                <constraint firstItem="aWF-eU-bZ3" firstAttribute="centerX" secondItem="xJ5-lV-zdr" secondAttribute="centerX" id="XiF-wi-4Kf"/>
+                                                <constraint firstItem="aWF-eU-bZ3" firstAttribute="centerY" secondItem="xJ5-lV-zdr" secondAttribute="centerY" id="a6Y-JU-QgE"/>
+                                                <constraint firstItem="aWF-eU-bZ3" firstAttribute="leading" secondItem="QLG-5f-nZ0" secondAttribute="trailing" constant="50" id="cSm-7N-iLs"/>
+                                                <constraint firstItem="QLG-5f-nZ0" firstAttribute="centerY" secondItem="aWF-eU-bZ3" secondAttribute="centerY" id="kYi-oj-YpT"/>
+                                                <constraint firstItem="C1J-Ts-FQe" firstAttribute="leading" secondItem="aWF-eU-bZ3" secondAttribute="trailing" constant="50" id="m6S-JE-SKc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -36,10 +75,25 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="전체" id="vjY-ei-jWk"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="0bl-ml-hho" id="nkw-LE-Pun"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FRD-Sm-jeI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="267" y="39"/>
+            <point key="canvasLocation" x="266.66666666666669" y="38.839285714285715"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrowImg" width="10" height="14"/>
+        <namedColor name="155">
+            <color red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="208230255">
+            <color red="0.81568627450980391" green="0.90196078431372551" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="74">
+            <color red="0.29019607843137257" green="0.29019607843137257" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

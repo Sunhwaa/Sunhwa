@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00B23EE524A61FAF000C6335 /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B23EE324A61FAF000C6335 /* WordViewController.swift */; };
+		00B23EE924A61FCF000C6335 /* WordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B23EE724A61FCF000C6335 /* WordTableViewCell.swift */; };
+		00B23EEA24A61FCF000C6335 /* WordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00B23EE824A61FCF000C6335 /* WordTableViewCell.xib */; };
 		00CF0BE324A613590024ABD1 /* Consonant.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CF0BE224A613590024ABD1 /* Consonant.storyboard */; };
 		00CF0BE924A6177A0024ABD1 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CF0BE824A6177A0024ABD1 /* Home.storyboard */; };
+		7C7A2EE824A61A400020BDDB /* ConsonantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7A2EE724A61A400020BDDB /* ConsonantViewController.swift */; };
+		7C7A2EEA24A61A570020BDDB /* ConsonantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7A2EE924A61A570020BDDB /* ConsonantCollectionViewCell.swift */; };
 		7CBB0F9324A60A44006CA992 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBB0F9224A60A44006CA992 /* AppDelegate.swift */; };
 		7CBB0F9524A60A44006CA992 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBB0F9424A60A44006CA992 /* SceneDelegate.swift */; };
 		7CBB0F9A24A60A44006CA992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CBB0F9824A60A44006CA992 /* Main.storyboard */; };
@@ -29,8 +34,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00B23EE324A61FAF000C6335 /* WordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = "<group>"; };
+		00B23EE724A61FCF000C6335 /* WordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTableViewCell.swift; sourceTree = "<group>"; };
+		00B23EE824A61FCF000C6335 /* WordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordTableViewCell.xib; sourceTree = "<group>"; };
 		00CF0BE224A613590024ABD1 /* Consonant.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Consonant.storyboard; sourceTree = "<group>"; };
 		00CF0BE824A6177A0024ABD1 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		7C7A2EE724A61A400020BDDB /* ConsonantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsonantViewController.swift; sourceTree = "<group>"; };
+		7C7A2EE924A61A570020BDDB /* ConsonantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsonantCollectionViewCell.swift; sourceTree = "<group>"; };
 		7CBB0F8F24A60A44006CA992 /* Sunhwa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sunhwa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CBB0F9224A60A44006CA992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CBB0F9424A60A44006CA992 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +72,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
+		00B23EE224A61F90000C6335 /* Word */ = {
+			isa = PBXGroup;
+			children = (
+				00B23EE324A61FAF000C6335 /* WordViewController.swift */,
+				00B23EE724A61FCF000C6335 /* WordTableViewCell.swift */,
+				00B23EE824A61FCF000C6335 /* WordTableViewCell.xib */,
+			);
+			path = Word;
+=======
+		7C7A2EE624A61A180020BDDB /* Consonant */ = {
+			isa = PBXGroup;
+			children = (
+				7C7A2EE724A61A400020BDDB /* ConsonantViewController.swift */,
+				7C7A2EE924A61A570020BDDB /* ConsonantCollectionViewCell.swift */,
+			);
+			path = Consonant;
+>>>>>>> 70956ff33dd50aed1ad91aac057f25598de62dec
+			sourceTree = "<group>";
+		};
 		7CBB0F8624A60A44006CA992 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +113,11 @@
 		7CBB0F9124A60A44006CA992 /* Sunhwa */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+				00B23EE224A61F90000C6335 /* Word */,
+=======
+				7C7A2EE624A61A180020BDDB /* Consonant */,
+>>>>>>> 70956ff33dd50aed1ad91aac057f25598de62dec
 				7CBB0FB724A60A63006CA992 /* Extension */,
 				7CBB0FB824A60A76006CA992 /* Network */,
 				7CBB0FBA24A60AD3006CA992 /* Storyboard */,
@@ -221,6 +256,7 @@
 				7CBB0FA224A60A46006CA992 /* LaunchScreen.storyboard in Resources */,
 				7CBB0F9F24A60A46006CA992 /* Assets.xcassets in Resources */,
 				00CF0BE324A613590024ABD1 /* Consonant.storyboard in Resources */,
+				00B23EEA24A61FCF000C6335 /* WordTableViewCell.xib in Resources */,
 				00CF0BE924A6177A0024ABD1 /* Home.storyboard in Resources */,
 				7CBB0F9A24A60A44006CA992 /* Main.storyboard in Resources */,
 			);
@@ -242,7 +278,14 @@
 			files = (
 				7CBB0F9D24A60A44006CA992 /* Sunhwa.xcdatamodeld in Sources */,
 				7CBB0F9324A60A44006CA992 /* AppDelegate.swift in Sources */,
+<<<<<<< HEAD
+				00B23EE524A61FAF000C6335 /* WordViewController.swift in Sources */,
+=======
+				7C7A2EEA24A61A570020BDDB /* ConsonantCollectionViewCell.swift in Sources */,
+				7C7A2EE824A61A400020BDDB /* ConsonantViewController.swift in Sources */,
+>>>>>>> 70956ff33dd50aed1ad91aac057f25598de62dec
 				7CBB0F9524A60A44006CA992 /* SceneDelegate.swift in Sources */,
+				00B23EE924A61FCF000C6335 /* WordTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
